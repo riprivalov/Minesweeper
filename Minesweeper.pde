@@ -6,7 +6,6 @@ public  final static int NUM_COLS = 20;
 public  final static int NUM_BOMBS = 20;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> bombs; //ArrayList of just the minesweeper buttons that are mined
-private Arrayt <MSButton> bombs;
 void setup ()
 {
     size(400, 400);
@@ -27,7 +26,13 @@ void setup ()
 }
 public void setBombs()
 {
-    //your code
+    int x = ((int)Math.random()*NUM_ROWS);
+    int y = ((int)Math.random()*NUM_COLS);
+        if buttons[x,y].contains(bombs){
+          
+        }
+
+    
 }
 
 public void draw ()
